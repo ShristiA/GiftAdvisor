@@ -4,13 +4,9 @@ public class Gift {
     private String giftname;
     private String gender;
     private String price;
+    private String age;
 
-    public Gift(String giftname, String gender, String price) {
-        this.giftname = giftname;
-        this.gender = gender;
-        this.price = price;
-    }
-    public Gift (){
+    public Gift(){
 
     }
 
@@ -18,8 +14,8 @@ public class Gift {
         return giftname;
     }
 
-    public void setGiftname(String gift) {
-        this.giftname = gift;
+    public void setGiftname(String giftname) {
+        this.giftname = giftname;
     }
 
     public String getGender() {
@@ -36,5 +32,24 @@ public class Gift {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public Gift(String giftname, String gender, String price, String age) {
+        this.giftname = giftname;
+        this.gender = gender;
+        this.price = price;
+        this.age = age;
+
+
+
+
     }
 }
